@@ -1,0 +1,40 @@
+The original input data: 
+samples: 128features: 6
+train data: 64test data: 64
+
+The predition result is:
+rmse: 0.153670511903 mae: 0.107466384795 r2: 0.262620035676
+
+------------------------------Layer One-------------------------------
+The layer one input data: 
+samples: 128features: 6
+train data: 64test data: 64
+
+The predition result in layer one is:
+rmse: 0.153670511903 mae: 0.107466384795 r2: 0.262620035676
+
+---The one retained features are[0, 1, 2, 3, 4, 5]
+------------------------------Layer Two-------------------------------
+The layer two input data: 
+samples: 128features: 6
+train data: 64test data: 64
+
+The predition result in layer two is:
+rmse: 0.148455676069 mae: 0.112905397566 r2: 0.311817105023
+
+---The two retained features are[0, 1, 2, 3, 4]
+------------------------------Layer Three-------------------------------
+The layer three input data: 
+samples: 128features: 5
+train data: 64test data: 64
+
+The predition result in layer three is:
+rmse: 0.148455676069 mae: 0.112905397566 r2: 0.311817105023
+
+---The three retained features are[0, 1, 2, 3, 4]
+------------------------------Layer Four-------------------------------
+The layer four input data: 
+samples: 128features: 5
+
+The predition result in layer three is:
+rmse: 0.144668697504 mae: 0.109396662695 r2: 0.346479218398

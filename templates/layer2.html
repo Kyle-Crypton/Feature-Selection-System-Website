@@ -1,0 +1,28 @@
+{% extends "template.html" %}
+{% block title %}Layer 2{% endblock %}
+{% block sidenav %}
+    {% for nav in sidenavlist %}
+        <li><a href="/{{nav}}/">{{nav}}</a></li>
+    {% endfor %}
+{% endblock %}
+{% block content %}
+    <center><h1>Layer2</h1></center>
+    <hr>
+    <center><h4>第二层:消除材料属性集中不相关属性</h4></center>
+    <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本层将根据样本数据的特点从距离度量、信息度量、依赖性度量和一致性度量四个类别中对对相关性评估方法进行选择,对于每一类中具体方法的选择,将根据经验或多次实验验证来确定。最后根据比较各条件属性的相关性评估值与相关性过滤阈值,如果相关性评估值低于相关性过滤阈值,则从样本数据集中删除该属性数据;否则,保留该属性。</h4>
+    <hr>
+    <div class="item">
+        <form action="" method="post" enctype="multipart/form-data"><p>
+            <input type="submit" value="Next">
+            <a href="../static/results/data-result2.csv">data-result2.csv</a>
+        </form>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <h2>Layer2 Result</h2>
+            <textarea rows="20" cols="150" style="border:0px">
+{{results}}
+            </textarea>
+        </div>
+    </div>
+{% endblock %}

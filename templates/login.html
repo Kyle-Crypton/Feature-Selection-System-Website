@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="../static/css/login.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/bootstrap.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <section class="login-form">
+                    <form role="login" method="post" action="">
+                        <img src="../static/images/login.png" class="img-responsive" alt="" />
+                        <h1 style="text-align:center">Feature Selection System</h1>
+                        <h6 style="color:red;text-align:center">{{warnings}}</h6>
+                        <input type="text" name="username" placeholder="Username" class="form-control input-lg">
+                        <input type="password" name="password" placeholder="Password" class="form-control input-lg">
+                        <button type="submit" class="btn btn-lg btn-primary btn-block">Login</button>
+                        <!-- <div>
+                            <a href="sign-up.html">Create account </a> or <a href="#"> Reset password </a>
+                        </div> -->
+                    </form>
+                </section>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{% extends "template.html" %}
+{% block title %}Layer 3{% endblock %}
+{% block sidenav %}
+    {% for nav in sidenavlist %}
+        <li><a href="/{{nav}}/">{{nav}}</a></li>
+    {% endfor %}
+{% endblock %}
+{% block content %}
+    <center><h1>Layer3</h1></center>
+    <hr>
+    <center><h4>第三层:消除材料属性集中的冗余属性</h4></center>
+    <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本层特征过滤的主要思想是,首先对样本数据集的数目 m 和维度 n 进行分析,来选择特征权重评估方法。如果 m>5000 或 n>40,则采用 Random Forest 作为特征权重评估方法;否则,采用 Lasso 方法。最后比较特征权重值和冗余性过滤阈值,如果权重值低于冗余性过滤阈值,则从样本数据集中删除该属性数据;否则,保留该属性。</h4>
+    <hr>
+    <div class="item">
+        <form action="" method="post" enctype="multipart/form-data"><p>
+            <input type="submit" value="Next">
+            <a href="../static/results/data-result3.csv">data-result3.csv</a>
+        </form>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <h2>Layer3 Result</h2>
+            <textarea rows="20" cols="150" style="border:0px">
+{{results}}
+            </textarea>
+        </div>
+    </div>
+{% endblock %}

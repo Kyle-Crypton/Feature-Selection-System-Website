@@ -1,0 +1,27 @@
+{% extends "template.html" %}
+{% block title %}Layer 4{% endblock %}
+{% block sidenav %}
+    {% for nav in sidenavlist %}
+        <li><a href="/{{nav}}/">{{nav}}</a></li>
+    {% endfor %}
+{% endblock %}
+{% block content %}
+    <center><h1>Layer4</h1></center>
+    <hr>
+    <center><h4>第四层:特征的组合与降维</h4></center>
+    <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本层在特征组合与转换之前,首先需要根据学习问题,选择合适的特征转换方法。如果是回归学习问题,则选择 PCA;如果是分类学习问题则选择 LDA;如果是流形学习问题,则选择 LEE。在进行特征转换后,依次对各特征的特征贡献率(由特征转换方法计算得到)进行累加,当累计特征贡献率高于累积贡献阈值,则当前所选择的特征即为转换后的特征集。</h4>
+    <hr>
+    <div class="item">
+        <form action="" method="post" enctype="multipart/form-data"><p>
+            <input type="submit" value="Next">
+        </form>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <h2>Layer4 Result</h2>
+            <textarea rows="20" cols="150" style="border:0px">
+{{results}}
+            </textarea>
+        </div>
+    </div>
+{% endblock %}

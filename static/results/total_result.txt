@@ -1,0 +1,4 @@
+The sample number is : 128
+The feature is : 6
+The original data has been normalized
+2 folds cross validationthe average rmse is : 0the total cost time is : 2.317745924
